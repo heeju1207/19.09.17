@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+	
+
+	<style type="text/css">
+		html{font-family: 'Noto Sans KR', sans-serif; margin: 0px; background: white;}
+		body{margin: 0; padding-top: 0px; padding-bottom: 0px;}
+		.wrap{width: 700px; margin: auto; background: #f99b7594; padding-top: 135px; padding-bottom: 100px;}
+		.center{text-align: center;}
+		.ppp{padding-bottom: 10px;}
+		h1{font-family: 'Do Hyeon', sans-serif; font-size: 35px; font-weight: bold; margin: 0px; padding-bottom: 5px;}
+		h2{font-size: 20px; font-weight: bold; margin: 0px; padding-top: 20px;}
+		p{font-size: 20px; font-weight: bold; margin: 0px;}
+		#www{font-family: 'Noto Sans KR', sans-serif; font-size: 13px; text-align: center;
+			padding: 5px;
+			border: none;
+			box-shadow: 0px 0px 4px  #f99b7594 inset;
+			border-radius: 5px;}
+
+		#hhh{font-family: 'Noto Sans KR', sans-serif; font-size: 13px; text-align: center;
+			padding: 5px;
+			border: none;
+			box-shadow: 0px 0px 4px  #f99b7594 inset;
+			border-radius: 5px;}
+
+		#okbut{font-family: 'Noto Sans KR', sans-serif; font-size: 13px; text-align: center;
+			padding-top: 6px; padding-bottom: 6px; padding-left: 11px; padding-right: 11px;
+			border: none;
+			box-shadow: 0px 0px 4px  #f99b7594 inset;
+			border-radius: 5px;}
+		#monitor{font-size: 20px; font-weight: bold; margin: 0px;}
+
+	</style>
+</head>
+<body>
+	<div class="wrap center">
+	<h1>할인 계산기</h1><br><br>
+	
+	<h2>가격 (원)</h2><br>
+	<input class="ppp" type="text" placeholder="가격을 입력하세요." id="www"><br><br>
+
+	<h2>할인률 (%)</h2><br>
+	<input class="ppp" type="text" placeholder="할인%를 입력하세요." id="hhh"><br><br><br>
+
+	<input type="button" value="확인" id="okbut"><br><br><br><br>
+
+	<div id="monitor"><p>당신의 결제가격은 000000원입니다.</p></div>
+	<script>
+		okbut.onclick = function(){
+			var ppp = www.value * (hhh.value/100);
+			monitor.innerHTML = "당신의 결제가격은 " + (www.value - ppp) + "원입니다.";}	
+	</script>
+	</div>
+</body>
+</html>
